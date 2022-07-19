@@ -38,4 +38,11 @@ if (!io.github.crisstanza.I18N) io.github.crisstanza.I18N = {};
 		});
 	};
 
+	io.github.crisstanza.I18N.flags = () => {
+		const elements = document.querySelectorAll('[i18n-flags="true"]');
+		elements.forEach((element) => {
+			io.github.crisstanza.Creator.html('img', {src: 'img/br.png'}, element);
+		});
+	};
+
 })();
