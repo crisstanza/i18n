@@ -51,7 +51,7 @@ if (!io.github.crisstanza.CookieIsGood) io.github.crisstanza.CookieIsGood = {};
 		cookieValue = cookieValue.replace(new RegExp('\\(', 'g'), '%28');
 		cookieValue = cookieValue.replace(new RegExp('\\)', 'g'), '%29');
 		cookieValue = encodeURIComponent(cookieValue);
-		document.cookie = cookieName + '=' + cookieValue + (expirationInDays ? ';expires=' + expiration.toUTCString() : '') + (path ? ';path=' + path : '');
+		document.cookie = cookieName + '=' + cookieValue + (expirationInDays ? ';expires=' + expiration.toUTCString() : '') + (path ? ';path=' + path : '') + ';SameSite=Strict';
 		return io.github.crisstanza.CookieIsGood.SUCCESS;
 	};
 
