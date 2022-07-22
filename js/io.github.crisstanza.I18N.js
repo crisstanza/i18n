@@ -89,7 +89,7 @@ if (!io.github.crisstanza.I18N) io.github.crisstanza.I18N = {};
 
 	io.github.crisstanza.I18N.click = (event) => {
 		const newLanguage = event.target.getAttribute('href').substring(1);
-		io.github.crisstanza.CookieIsGood.set('language', newLanguage);
+		io.github.crisstanza.CookieIsGood.set('language', newLanguage, null, 365);
 		io.github.crisstanza.I18N.render(newLanguage);
 	};
 
