@@ -3,11 +3,19 @@
 	<head>
 		<title>i18n</title>
 		<script src="js/io.github.crisstanza.I18N.js"></script>
-		<script type="text/javascript" src="js/lib/io.github.crisstanza.Creator.js"></script>
+		<script src="js/lib/io.github.crisstanza.Creator.js"></script>
+		<script src="js/lib/io.github.crisstanza.Cookie-Is-Good_1.0.2.js"></script>
 		<script src="js/i18n.js"></script>
 		<style>
 			footer.center { text-align: center; }
 			.github-icon { opacity: 0.15; }
+		</style>
+		<style>
+			div.center { text-align: center; }
+			div[i18n-flags] a img { width: 27px; height: 17px; pointer-events: none; }
+			div[i18n-flags] a:not(:last-child) { margin-right: 10px; }
+			div[i18n-flags] a.on { opacity: 1; }
+			div[i18n-flags] a.off { opacity: 0.25; }
 		</style>
 		<script>
 			(() =>{
@@ -20,7 +28,7 @@
 	</head>
 	<body>
 		<h2 i18n="language">Language:</h2>
-		<div class="center" i18n-flags="true"></div>
+		<div class="center" i18n-flags="us,br,fr,es"></div>
 		<br />
 		<footer class="center">
 			<a title="Source code on GitHub." target="_blank" href="https://github.com/crisstanza/i18n/"><img border="0" src="img/github.png" width="24" height="24" class="github-icon" /></a>
